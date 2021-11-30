@@ -1,5 +1,6 @@
 package com.Exception;
 
+
 import static org.junit.Assert.assertEquals;
 
 import java.util.Scanner;
