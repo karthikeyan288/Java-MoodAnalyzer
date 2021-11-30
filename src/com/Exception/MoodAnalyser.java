@@ -26,5 +26,3 @@ public class MoodAnalyser {
 			return message;
 		}
 	}
-
-}
