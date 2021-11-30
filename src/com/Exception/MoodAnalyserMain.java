@@ -14,11 +14,19 @@ public class MoodAnalyserMain {
 	@Test
 	public void givenMessage_should_return_SAD() {
 		moodAnalyser = new MoodAnalyser("I am in Sad Mood");
-		String result = moodAnalyser.analyseMood();
+  	String result = moodAnalyser.analyseMood();
 		System.out.println(result);
 		assertEquals("SAD", result);
-	}
-	
+  }
+
+	@Test
+	public void givenMessage_should_return_HAPPY() {
+		moodAnalyser = new MoodAnalyser("I am in happy Mood");
+		String result = moodAnalyser.analyseMood();
+		System.out.println(result);
+		assertEquals("HAPPY", result);
+  }
+  
 	@Test
 	public void givenMessage_should_return_HAPPY() {
 		 moodAnalyser = new MoodAnalyser("I am in Any Mood");
