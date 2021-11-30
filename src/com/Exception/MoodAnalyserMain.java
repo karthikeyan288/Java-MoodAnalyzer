@@ -11,7 +11,7 @@ public class MoodAnalyserMain {
 
 	static MoodAnalyser moodAnalyser;
 
-	@Test
+  @Test
 	public void givenMessage_should_return_SAD() {
 		moodAnalyser = new MoodAnalyser("I am in Sad Mood");
   	String result = moodAnalyser.analyseMood();
@@ -25,8 +25,8 @@ public class MoodAnalyserMain {
 		String result = moodAnalyser.analyseMood();
 		System.out.println(result);
 		assertEquals("HAPPY", result);
-  }
-  
+	}
+	
 	@Test
 	public void givenMessage_should_return_HAPPY() {
 		 moodAnalyser = new MoodAnalyser("I am in Any Mood");
