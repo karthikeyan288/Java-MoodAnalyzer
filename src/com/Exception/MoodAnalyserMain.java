@@ -1,6 +1,5 @@
 package com.Exception;
 
-
 import static org.junit.Assert.assertEquals;
 
 import java.util.Scanner;
@@ -18,5 +17,13 @@ public class MoodAnalyserMain {
 		String result = moodAnalyser.analyseMood();
 		System.out.println(result);
 		assertEquals("SAD", result);
+	}
+	
+	@Test
+	public void givenMessage_should_return_HAPPY() {
+		 moodAnalyser = new MoodAnalyser("I am in Any Mood");
+		 String result = moodAnalyser.analyseMood();
+		 System.out.println(result);
+		 assertEquals("HAPPY", result);
 	}
 }
