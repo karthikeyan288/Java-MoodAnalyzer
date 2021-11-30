@@ -1,13 +1,22 @@
 package com.Exception;
 
+
+import static org.junit.Assert.assertEquals;
+
 import java.util.Scanner;
 
+import org.junit.Before;
+import org.junit.Test;
+
 public class MoodAnalyserMain {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the message :");
-		String message = sc.nextLine();
-		MoodAnalyser moodAnalyser = new MoodAnalyser(message);
-		moodAnalyser.analyseMood();
+
+	static MoodAnalyser moodAnalyser;
+
+	@Test
+	public void givenMessage_should_return_SAD() {
+		moodAnalyser = new MoodAnalyser("I am in Sad Mood");
+		String result = moodAnalyser.analyseMood();
+		System.out.println(result);
+		assertEquals("SAD", result);
 	}
 }
