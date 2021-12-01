@@ -11,6 +11,7 @@ import org.junit.rules.ExpectedException;
 public class MoodAnalyserMain {
 
 	static MoodAnalyser moodAnalyser;
+
 	Scanner sc = new Scanner(System.in);
 
 	@Test
@@ -23,7 +24,6 @@ public class MoodAnalyserMain {
 		} catch (MoodAnalysisException ex) {
 
 		}
-	}
 
 	@Test
 	public void givenMessage_should_return_HAPPY() {
@@ -59,5 +59,4 @@ public class MoodAnalyserMain {
 		} catch (MoodAnalysisException ex) {
 			ex.printStackTrace();
 		}
-	}
-}
+  }

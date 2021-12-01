@@ -27,5 +27,8 @@ public class MoodAnalyser {
 			throw new MoodAnalysisException(MoodAnalysisException.exceptionType.ENTERD_NULL, "Enter the valid mood");
 		}
 	}
-
 }
+
+			
+
+
